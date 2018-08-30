@@ -4,10 +4,12 @@ language: go
 
 go:
   # go vet --all doesn't work with 1.8 or 1.7
-  - 1.9.x
+  - '1.9.x'
+  - '1.10.x'
   - master
 
 script:
   - make ci
+  - make bench
 
 sudo: false
